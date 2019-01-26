@@ -9,6 +9,13 @@
 /modem_debug	emmc	/dev/block/platform/bootdevice/by-name/CP_DEBUG	flags=backup=1;display="Baseband (Debug)";subpartitionof=/modem
 /efs		ext4	/dev/block/platform/bootdevice/by-name/EFS	flags=backup=1;display="EFS"
 /cpefs      ext4    /dev/block/platform/bootdevice/by-name/CPEFS flags=backup=1;display="CPEFS";subpartitionof=/efs
-/vendor         ext4    /dev/block/platform/bootdevice/by-name/vendor  flags=backup=1
+/vendor         ext4    /dev/block/platform/bootdevice/by-name/VENDOR  flags=backup=1
 
 /external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
+/misc		emmc	/dev/block/platform/bootdevice/by-name/MISC
+
+
+
+/m9kefs1         emmc   /dev/block/mmcblk0p5 flags=backup=1;display=m9kefs1
+/m9kefs2         emmc   /dev/block/mmcblk0p6 flags=backup=1;subpartitionof=/m9kefs2
+/m9kefs3         emmc   /dev/block/mmcblk0p7 flags=backup=1;subpartitionof=/m9kefs3
