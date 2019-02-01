@@ -50,7 +50,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 
 # TWRP specific build flags
-TW_THEME := portrait_hdpi
+TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
 #BOARD_HAS_NO_REAL_SDCARD := true
