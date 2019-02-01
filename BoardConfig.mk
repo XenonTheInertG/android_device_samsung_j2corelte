@@ -1,3 +1,5 @@
+USE_NINJA := false
+
 #Bootloader 
 
 TARGET_NO_BOOTLOADER := true
