@@ -1,1 +1,2 @@
 PRODUCT_MAKEFILES := $(LOCAL_DIR)/omni_j2corelte.mk
+PRODUCT_MAKEFILES := $(LOCAL_DIR)/j2corelte.mk
