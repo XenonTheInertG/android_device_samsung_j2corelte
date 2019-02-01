@@ -89,3 +89,6 @@ TW_INCLUDE_CRYPTO := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 #TARGET_USES_LOGD := true
 #TWRP_INCLUDE_LOGCAT := true
+
+# Include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/j2corelte/include
