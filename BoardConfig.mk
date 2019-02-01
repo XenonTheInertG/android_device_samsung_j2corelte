@@ -37,7 +37,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64
 
 #BOOT image 
 
-BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/j2corelte/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/j2corelte/bootimg.mk
 BOARD_KERNEL_IMAGE_NAME := kernel
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
@@ -45,7 +45,6 @@ BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 # 000RU = recovery kernel, 000KU = system kernel
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --board SRPRF18A001RU
-TARGET_CUSTOM_DTBTOOL := dtbhtoolExynos
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16851488
@@ -89,6 +88,3 @@ TW_INCLUDE_CRYPTO := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 #TARGET_USES_LOGD := true
 #TWRP_INCLUDE_LOGCAT := true
-
-# Include
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/j2corelte/include
