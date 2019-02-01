@@ -5,7 +5,7 @@ ifeq ($(TARGET_PREBUILT_KERNEL),)
 else
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/prebuilt/dt.img:dt.img
+     $(LOCAL_PATH)/dt.img:dt.img
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_j2corelte
