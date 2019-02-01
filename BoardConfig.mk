@@ -22,6 +22,7 @@ TARGET_USES_UNCOMPRESSED_KERNEL := true
 
 TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
 TARGET_PREBUILT_DTB := device/samsung/j2corelte/prebuilt/dt.img
+TARGET_KERNEL_CONFIG := j2corelte_defconfig
 
 #BOOT image 
 
