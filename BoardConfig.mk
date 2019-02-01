@@ -60,6 +60,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 
 # TWRP specific build flags
+RECOVERY_VARIANT := twrp
 TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
