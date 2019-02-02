@@ -7,6 +7,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+PRODUCT_COPY_FILES += \
+     $(LOCAL_PATH)/dt.img:dt.img
+
 PRODUCT_PACKAGES += \
 	charger_res_images \
 	charger
