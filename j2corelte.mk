@@ -1,9 +1,5 @@
 LOCAL_PATH := device/samsung/j2corelte
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/dt.img:dt.img
 
