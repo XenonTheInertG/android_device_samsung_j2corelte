@@ -8,7 +8,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/dt.img:dt.img
+     device/samsung/j2corelte/dt.img:dt.img
 
 PRODUCT_PACKAGES += \
 	charger_res_images \
