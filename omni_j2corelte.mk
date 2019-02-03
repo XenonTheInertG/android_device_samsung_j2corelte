@@ -9,6 +9,8 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
      device/samsung/j2corelte/dt.img:dt.img
+
+PRODUCT_COPY_FILES += \
      device/samsung/j2corelte/boot.img:boot.img
 
 PRODUCT_PACKAGES += \
