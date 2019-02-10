@@ -4,5 +4,5 @@ ro.arch=exynos7570
 ro.boot.bootdevice=13540000.dwmmc0
 ro.lcd_min_brightness=0
 ro.lcd_brightness=162
-ro.sf.lcd_density=222
+ro.sf.lcd_density=240
 persist.sys.usb.config=mtp,adb
