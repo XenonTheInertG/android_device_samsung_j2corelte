@@ -1,3 +1,5 @@
+LOCAL_PATH := device/samsung/j2corelte
+
 # Release name
 PRODUCT_RELEASE_NAME := j2corelte
 
@@ -8,10 +10,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-     device/samsung/j2corelte/dt.img:dt.img
-
-PRODUCT_COPY_FILES += \
-     device/samsung/j2corelte/boot.img:boot.img
+     $(LOCAL_PATH)/kernel:kernel \
+     $(LOCAL_PATH)/dt.img:dt.img \
+     $(LOCAL_PATH)/boot.img:boot.img
 
 PRODUCT_PACKAGES += \
 	charger_res_images \
