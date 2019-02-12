@@ -14,6 +14,7 @@
 /vendor_image         emmc    /dev/block/platform/bootdevice/by-name/VENDOR
 
 /external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
+/usb-otg  vfat   /dev/block/sda*  flags=removable;storage;display=USB-OTG
 /misc		emmc	/dev/block/platform/bootdevice/by-name/MISC
 
 
