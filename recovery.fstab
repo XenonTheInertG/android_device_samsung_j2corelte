@@ -2,6 +2,7 @@
 /boot		emmc	/dev/block/platform/bootdevice/by-name/BOOT
 /recovery	emmc	/dev/block/platform/bootdevice/by-name/RECOVERY	flags=backup=1
 /system		ext4	/dev/block/platform/bootdevice/by-name/SYSTEM
+/system_image		emmc	/dev/block/platform/bootdevice/by-name/SYSTEM
 /data		ext4	/dev/block/platform/bootdevice/by-name/USERDATA	flags=encryptable=footer;length=-16384
 /cache		ext4	/dev/block/platform/bootdevice/by-name/CACHE
 /preload    ext4    /dev/block/platform/bootdevice/by-name/HIDDEN
@@ -10,6 +11,7 @@
 /efs		ext4	/dev/block/platform/bootdevice/by-name/EFS	flags=backup=1;display="EFS"
 /cpefs      ext4    /dev/block/platform/bootdevice/by-name/CPEFS flags=backup=1;display="CPEFS";subpartitionof=/efs
 /vendor         ext4    /dev/block/platform/bootdevice/by-name/VENDOR  flags=backup=1
+/vendor_image         emmc    /dev/block/platform/bootdevice/by-name/VENDOR
 
 /external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
 /misc		emmc	/dev/block/platform/bootdevice/by-name/MISC
