@@ -94,6 +94,3 @@ TW_INCLUDE_CRYPTO := true
 TW_NEVER_UNMOUNT_SYSTEM := true
 #TARGET_USES_LOGD := true
 #TWRP_INCLUDE_LOGCAT := true
-
-# USB Mounting
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/13600000.usb/13600000.dwc3/gadget/lun%d/file
