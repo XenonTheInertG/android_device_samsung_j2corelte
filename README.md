@@ -6,7 +6,7 @@ Build using minimal TWRP 8.1
 
 
 
-##Device configuration for Samsung Galaxy J2 Core (2018) (j2corelte)
+## Device configuration for Samsung Galaxy J2 Core (2018) (j2corelte)
 
 =====================================
 
