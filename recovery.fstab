@@ -1,4 +1,3 @@
-
 /boot		emmc	/dev/block/platform/bootdevice/by-name/BOOT
 /recovery	emmc	/dev/block/platform/bootdevice/by-name/RECOVERY	flags=backup=1
 /system		ext4	/dev/block/platform/bootdevice/by-name/SYSTEM
@@ -16,8 +15,6 @@
 /external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
 /usb-otg  vfat   /dev/block/sda*  flags=removable;storage;display=USB-OTG
 /misc		emmc	/dev/block/platform/bootdevice/by-name/MISC
-
-
 
 /m9kefs1         emmc   /dev/block/mmcblk0p5 flags=backup=1;display=m9kefs1
 /m9kefs2         emmc   /dev/block/mmcblk0p6 flags=backup=1;subpartitionof=/m9kefs2
