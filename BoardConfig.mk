@@ -35,15 +35,15 @@ TARGET_CPU_SMP := true
 #TARGET_KERNEL_ARCH := arm64
 #TARGET_KERNEL_HEADER_ARCH := arm64
 
-TARGET_USES_UNCOMPRESSED_KERNEL := true
-TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
-TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
+#TARGET_USES_UNCOMPRESSED_KERNEL := true
+#TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
+#TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
 
 #Building kernel from source
-#TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
-#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 
 #BOOT image 
 
