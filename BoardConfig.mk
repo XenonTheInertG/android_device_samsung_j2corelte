@@ -17,21 +17,25 @@ TARGET_BOARD_PLATFORM_GPU := mali-t720
 #TARGET_CPU_ABI := arm64-v8a
 #TARGET_CPU_ABI2 :=
 #TARGET_CPU_VARIANT := cortex-a53
-TARGET_CPU_SMP := true
 
+# For 32bit mode
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_VARIANT := cortex-a53
+
+# Shared preferences
 TARGET_CPU_CORTEX_A53 := true
+TARGET_CPU_SMP := true
 
 #Kernel
 
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_USES_UNCOMPRESSED_KERNEL := true
+# For 64bit mode
+#TARGET_KERNEL_ARCH := arm64
+#TARGET_KERNEL_HEADER_ARCH := arm64
 
+TARGET_USES_UNCOMPRESSED_KERNEL := true
 TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
 TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
 
