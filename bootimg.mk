@@ -7,7 +7,7 @@ ifdef TARGET_PREBUILT_DTB
 	BOARD_MKBOOTIMG_ARGS += --dt $(TARGET_PREBUILT_DTB)
 endif
 
-$(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(INSTALLED_DTIMAGE_TARGET) $(recovery_kernel) $(recovery_ramdisk)
+$(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) $(INSTALLED_DTIMAGE_TARGET) $(recovery_kernel) $(recovery_ramdisk) $(recovery_uncompressed_ramdisk)
 	@echo -e ${CL_CYN}"----- Compressing recovery ramdisk with lzma ------"${CL_RST}
 	rm -f $(recovery_uncompressed_ramdisk).lzma
 	$(LZMA_BIN) $(recovery_uncompressed_ramdisk)
