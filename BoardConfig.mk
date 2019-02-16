@@ -35,21 +35,21 @@ TARGET_CPU_SMP := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
-TARGET_USES_UNCOMPRESSED_KERNEL := true
+#TARGET_USES_UNCOMPRESSED_KERNEL := true
 TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
 TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
 
 #Building kernel from source
-TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+#TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 
 #BOOT image 
 
 BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/j2corelte/bootimg.mk
 BOARD_KERNEL_IMAGE_NAME := kernel
-BOARD_KERNEL_SEPARATED_DT := true
+#BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -73,7 +73,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 
 # TWRP specific build flags
-RECOVERY_VARIANT := twrp
+#RECOVERY_VARIANT := twrp
 TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -85,7 +85,9 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_NTFS_3G := true
-LZMA_RAMDISK_TARGETS := recovery
+#LZMA_RAMDISK_TARGETS := recovery
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_USE_NEW_MINADBD := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := true
