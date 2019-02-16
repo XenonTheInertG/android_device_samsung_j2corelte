@@ -8,6 +8,8 @@ TARGET_BOOTLOADER_BOARD_NAME := universal7570_go
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_SOC := exynos7570
 TARGET_BOARD_PLATFORM_GPU := mali-t720
+TARGET_GLOBAL_CFLAGS += -mtune=cortex-a53 -mfpu=neon -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a53 -mfpu=neon -mfloat-abi=softfp
 
 # Architecture
 
@@ -35,9 +37,9 @@ TARGET_CPU_SMP := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
-#TARGET_USES_UNCOMPRESSED_KERNEL := true
-#TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
-#TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
+TARGET_USES_UNCOMPRESSED_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/kernel
+TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
 
 #Building kernel from source
 TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
