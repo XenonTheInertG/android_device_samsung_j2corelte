@@ -8,8 +8,6 @@ TARGET_BOOTLOADER_BOARD_NAME := universal7570_go
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_BOARD_SOC := exynos7570
 TARGET_BOARD_PLATFORM_GPU := mali-t720
-TARGET_GLOBAL_CFLAGS += -mtune=cortex-a53 -mfpu=neon -mfloat-abi=softfp
-TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a53 -mfpu=neon -mfloat-abi=softfp
 
 # Architecture
 
