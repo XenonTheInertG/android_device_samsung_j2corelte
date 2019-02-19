@@ -43,13 +43,13 @@ TARGET_PREBUILT_DTB := device/samsung/j2corelte/dt.img
 TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN := android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 
 #BOOT image 
 
 BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/j2corelte/bootimg.mk
 BOARD_KERNEL_IMAGE_NAME := kernel
-#BOARD_KERNEL_SEPARATED_DT := true
+BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -84,7 +84,7 @@ TW_DEFAULT_BRIGHTNESS := 162
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
-#TW_INCLUDE_NTFS_3G := true
+TW_INCLUDE_NTFS_3G := true
 LZMA_RAMDISK_TARGETS := recovery
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_NEW_MINADBD := true
