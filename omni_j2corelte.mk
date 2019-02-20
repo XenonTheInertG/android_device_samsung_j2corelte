@@ -12,7 +12,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/prebuilt/zImage:zImage \
      $(LOCAL_PATH)/prebuilt/dt.img:dt.img \
-     $(LOCAL_PATH)/boot.img:boot.img
+     $(LOCAL_PATH)/boot.img:boot.img \
      $(OUT_DIR)arch/arm/boot/zImage:$(OUT_DIR)/obj/KERNEL_OBJ/arch/arm64/boot/zImage
 
 PRODUCT_PACKAGES += \
