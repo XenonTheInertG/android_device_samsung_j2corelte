@@ -39,10 +39,10 @@ TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/prebuilt/Image
 TARGET_PREBUILT_DTB := device/samsung/j2corelte/prebuilt/dt.img
 
 #Building kernel from source
-TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+#TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+#KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 
 #BOOT image 
 
@@ -72,7 +72,6 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 
 # TWRP specific build flags
-#RECOVERY_VARIANT := twrp
 TW_THEME := portrait_mdpi
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
@@ -85,7 +84,6 @@ TW_HAS_DOWNLOAD_MODE := true
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_NTFS_3G := true
 LZMA_RAMDISK_TARGETS := recovery
-TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_NEW_MINADBD := true
 
 # Encryption support
