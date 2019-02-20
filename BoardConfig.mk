@@ -35,8 +35,7 @@ TARGET_CPU_SMP := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 
-#TARGET_USES_UNCOMPRESSED_KERNEL := true
-TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/prebuilt/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/j2corelte/prebuilt/Image
 TARGET_PREBUILT_DTB := device/samsung/j2corelte/prebuilt/dt.img
 
 #Building kernel from source
@@ -48,7 +47,7 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64
 #BOOT image 
 
 BOARD_CUSTOM_BOOTIMG_MK :=  device/samsung/j2corelte/bootimg.mk
-BOARD_KERNEL_IMAGE_NAME := zImage
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_CMDLINE := # Exynos doesn't take cmdline arguments from boot image
 BOARD_KERNEL_BASE := 0x10000000
