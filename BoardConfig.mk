@@ -43,7 +43,7 @@ TARGET_PREBUILT_DTB := device/samsung/j2corelte/prebuilt/dt.img
 TARGET_KERNEL_CONFIG := j2corelte_01_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/j2corelte
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-KERNEL_TOOLCHAIN := ~/android/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
 
 #BOOT image 
 
