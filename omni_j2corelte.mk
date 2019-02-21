@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_COPY_FILES += \
-     $(LOCAL_PATH)/prebuilt/Image.gz:kernel \
+     $(LOCAL_PATH)/prebuilt/Image:kernel \
      $(LOCAL_PATH)/prebuilt/dt.img:dt.img \
      $(LOCAL_PATH)/boot.img:boot.img
 
