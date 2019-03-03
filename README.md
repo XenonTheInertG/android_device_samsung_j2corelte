@@ -4,6 +4,8 @@ SM-J260F has not been tested, but it should work fine, it uses the same processo
 
 Build using minimal TWRP 8.1
 
+Supports project treble. ARM_binder64 Slot A.
+
 
 
 ## Device configuration for Samsung Galaxy J2 Core (2018) (j2corelte)
