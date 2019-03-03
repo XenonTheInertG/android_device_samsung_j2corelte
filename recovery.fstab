@@ -11,11 +11,9 @@
 /cpefs      ext4    /dev/block/platform/bootdevice/by-name/CPEFS flags=backup=1;display="CPEFS";subpartitionof=/efs
 /vendor         ext4    /dev/block/platform/bootdevice/by-name/VENDOR  flags=backup=1
 /vendor_image         emmc    /dev/block/platform/bootdevice/by-name/VENDOR
-
 /external_sd	vfat	/dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="Micro SDcard";storage;wipeingui;removable
 /usb-otg  vfat   /dev/block/sda*  flags=removable;storage;display=USB-OTG
 /misc		emmc	/dev/block/platform/bootdevice/by-name/MISC
-
 /m9kefs1         emmc   /dev/block/mmcblk0p5 flags=backup=1;display=m9kefs1
 /m9kefs2         emmc   /dev/block/mmcblk0p6 flags=backup=1;subpartitionof=/m9kefs2
 /m9kefs3         emmc   /dev/block/mmcblk0p7 flags=backup=1;subpartitionof=/m9kefs3
