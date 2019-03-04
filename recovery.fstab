@@ -1,3 +1,4 @@
+#/partition format blockname flags
 /boot		emmc	/dev/block/platform/bootdevice/by-name/BOOT
 /recovery	emmc	/dev/block/platform/bootdevice/by-name/RECOVERY	flags=backup=1
 /system		ext4	/dev/block/platform/bootdevice/by-name/SYSTEM
