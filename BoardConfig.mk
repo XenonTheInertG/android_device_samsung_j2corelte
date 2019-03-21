@@ -73,7 +73,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_NTFS_3G := true
 LZMA_RAMDISK_TARGETS := recovery
-TW_USE_NEW_MINADBD := true
+#TW_USE_NEW_MINADBD := true
 
 # Encryption support
 #TW_INCLUDE_CRYPTO := true
