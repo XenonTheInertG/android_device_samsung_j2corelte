@@ -14,10 +14,6 @@ PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/prebuilt/dt.img:dt.img \
      $(LOCAL_PATH)/boot.img:boot.img
 
-PRODUCT_PACKAGES += \
-	charger_res_images \
-	charger
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_j2corelte
 PRODUCT_DEVICE := j2corelte
