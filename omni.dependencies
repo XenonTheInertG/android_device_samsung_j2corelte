@@ -4,5 +4,11 @@
 		"repository":"VladAndroidGamer/android_kernel_samsung_j2corelte",
 		"target_path":"kernel/samsung/j2corelte",
 		"revision":"master"
+	},
+	{
+		"remote":"github",
+		"repository":"VladAndroidGamer/android_device_samsung_j2corelte",
+		"target_path":"device/samsung/j2corelte",
+		"revision":"android-8.1"
 	}
 ]
