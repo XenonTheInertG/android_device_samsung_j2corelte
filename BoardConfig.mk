@@ -19,6 +19,7 @@ TARGET_CPU_VARIANT := cortex-a53
 TARGET_CPU_CORTEX_A53 := true
 TARGET_CPU_SMP := true
 TARGET_USES_64_BIT_BINDER := true
+ARCH_ARM_HAVE_NEON := true
 
 #Kernel
 # For 64bit mode
