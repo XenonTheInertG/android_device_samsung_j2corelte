@@ -55,13 +55,15 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 184549376
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4  
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-
 # File System
 # Use this flag if the board has a ext4 partition larger than 2gb
 BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
+# Workaround for error copying vendor files to recovery ramdisk
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_VENDOR := vendor
 
 # TWRP specific build flags
 TW_THEME := portrait_mdpi
