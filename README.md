@@ -2,7 +2,7 @@
 
 SM-J260F has not been tested, but it should work fine, it uses the same processor and board as the SM-G570F
 
-Build using minimal TWRP 8.1
+Build using minimal TWRP 8.1 
 
 Supports project treble. ARM_binder64 Slot A.
 
